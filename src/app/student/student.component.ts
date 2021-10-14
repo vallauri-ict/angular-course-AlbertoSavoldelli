@@ -7,17 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StudentComponent implements OnInit {
   studentList=[
-    {name:'Ettore Esposito',hobby:'Karate',gender:'M'},
-    {name:'Edoardo Ababei',hobby:'Calcio',gender:'M'},
-    {name:'Fabio Cavallero',hobby:'Calcio',gender:'M'},
-    {name:'Lorenzo Cravero',hobby:'Basket',gender:'M'},
-    {name:'Martina Velardi',hobby:'Karate',gender:'F'},
-    {name:'Alberto Savoldelli',hobby:'Basket',gender:'M'},
-    {name:'Paolo Racca',hobby:'Karate',gender:'M'},
-    {name:'Giada Valinotto',hobby:'Calcio',gender:'F'},
-    {name:'Bianca Teleman',hobby:'Basket',gender:'F'},
-    {name:'Gabriele Leone',hobby:'Basket',gender:'M'},
-    {name:'Luca Pelissero',hobby:'Calcio',gender:'M'},
+    {name:'Ettore Esposito',hobby:'Karate',gender:'M',isPro:false},
+    {name:'Edoardo Ababei',hobby:'Calcio',gender:'M',isPro:false},
+    {name:'Fabio Cavallero',hobby:'Calcio',gender:'M',isPro:true},
+    {name:'Lorenzo Cravero',hobby:'Basket',gender:'M',isPro:false},
+    {name:'Martina Velardi',hobby:'Karate',gender:'F',isPro:true},
+    {name:'Alberto Savoldelli',hobby:'Basket',gender:'M',isPro:false},
+    {name:'Paolo Racca',hobby:'Karate',gender:'M',isPro:false},
+    {name:'Giada Valinotto',hobby:'Calcio',gender:'F',isPro:true},
+    {name:'Bianca Teleman',hobby:'Basket',gender:'F',isPro:false},
+    {name:'Gabriele Leone',hobby:'Basket',gender:'M',isPro:true},
+    {name:'Luca Pelissero',hobby:'Calcio',gender:'M',isPro:false},
   ]
 
   student:any;
