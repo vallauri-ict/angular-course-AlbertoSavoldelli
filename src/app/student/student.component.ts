@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-student',
@@ -6,35 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./student.component.css']
 })
 export class StudentComponent implements OnInit {
-  studentList=[
-    {name:'Ettore Esposito',hobby:'Karate',gender:'M',isPro:false},
-    {name:'Edoardo Ababei',hobby:'Calcio',gender:'M',isPro:false},
-    {name:'Fabio Cavallero',hobby:'Calcio',gender:'M',isPro:true},
-    {name:'Lorenzo Cravero',hobby:'Basket',gender:'M',isPro:false},
-    {name:'Martina Velardi',hobby:'Karate',gender:'F',isPro:true},
-    {name:'Alberto Savoldelli',hobby:'Basket',gender:'M',isPro:false},
-    {name:'Paolo Racca',hobby:'Karate',gender:'M',isPro:false},
-    {name:'Giada Valinotto',hobby:'Calcio',gender:'F',isPro:true},
-    {name:'Bianca Teleman',hobby:'Basket',gender:'F',isPro:false},
-    {name:'Gabriele Leone',hobby:'Basket',gender:'M',isPro:true},
-    {name:'Luca Pelissero',hobby:'Calcio',gender:'M',isPro:false},
-  ]
-
-  student:any;
+  @Input()student:any;
   constructor() {
-    this.randomStudent();
+    //this.randomStudentPro();
   }
   
-  private randomStudent(){
-    let num=Math.floor(Math.random() * this.studentList.length);
-    this.student=this.studentList[num];
+  private randomStudentPro(){
+    let n = Math.floor(Math.random() * 2);
+    if(n == 1) this.student.isPro = true;
   }
 
   ngOnInit(): void {
+    this.randomStudentPro();
   }
 
   onStudentClick(){
-    this.randomStudent();
+    this.student.isPro = !this.student.isPro;
   }
 
 }

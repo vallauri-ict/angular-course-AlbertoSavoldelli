@@ -1,5 +1,5 @@
 <!-- <h4 [ngStyle]="{backgroundColor: student.gender=='F' ? 'pink' : 'cyan'}">{{student.name}} - {{student.hobby}}</h4> -->
-<p class="clicable" [ngClass]="{
+<span class="clicable" [ngClass]="{
     'female':student.gender=='F',
     'male':student.gender=='M',
     'underlined':student.hobby=='Basket'}"
@@ -12,4 +12,4 @@
         <span>(dilettante)</span>
     </ng-template>
     - {{student.hobby}}
-</p>
+</span>
