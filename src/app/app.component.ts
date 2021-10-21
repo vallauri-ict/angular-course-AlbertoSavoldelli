@@ -21,14 +21,14 @@ export class AppComponent {
   //   {name:'Gabriele Leone',hobby:'Basket',gender:'M',isPro:false},
   //   {name:'Luca Pelissero',hobby:'Calcio',gender:'M',isPro:false},
   // ]
-  hobbies=["Karate","Padel","Calcio","Motori"]
-  studentList:any[]=[];
+  hobbies=["Karate","Padel","Calcio","Basket"]
+  studentList:any=[];
   studentName:string="";
-  studentGeneder:string="M";
-  studentHobby:string="";
+  studentGender:string = "M";
+  studentHobby:string = "";
 
   onAddStudent(){
-    let newStudent={name:this.studentName,hobby:this.studentHobby,gender:this.studentGeneder,isPro:false};
+    let newStudent={name:this.studentName,hobby:this.studentHobby,gender:this.studentGender,isPro:false};
     this.studentList.push(newStudent);
     this.studentName="";
     this.txtName.nativeElement.focus();

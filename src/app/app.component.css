@@ -182,15 +182,19 @@
     background-color: whitesmoke;
     color:grey;
   }
-  .genderSelection>div{
+  .gender-selection>div{
     display: inline;
-  }
-  .genderSelection{
+}
+
+.gender-selection{
     margin: 10px auto;
-  }
-  .hobbySelection{
+}
+
+.hobby-selection{
+    width: 110px;
     margin: 10px auto;
-  }
+}
+
   .terminal {
     position: relative;
     width: 80%;
