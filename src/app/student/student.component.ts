@@ -6,14 +6,14 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./student.component.css']
 })
 export class StudentComponent implements OnInit {
-  @Input()student:any;
+  @Input() student:any;
   constructor() {
     //this.randomStudentPro();
   }
   
   private randomStudentPro(){
     let n = Math.floor(Math.random() * 2);
-    if(n == 1) this.student.isPro = true;
+    if(n == 1 ) this.student.isPro = true;
   }
 
   ngOnInit(): void {
