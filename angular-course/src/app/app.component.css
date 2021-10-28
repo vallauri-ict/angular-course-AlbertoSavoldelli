@@ -194,7 +194,12 @@
     width: 110px;
     margin: 10px auto;
 }
-
+button.delete{
+  background-color: lightcoral;
+  margin-left: 12px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+}
   .terminal {
     position: relative;
     width: 80%;
